@@ -1,0 +1,16 @@
+[package]
+name = "ndarray"
+version = "0.1.0"
+
+[package.metadata.thermite]
+github_releases = true
+github_release_type = "latest"
+git_tag_regex = "^v(\\d+\\.\\d+\\.\\d+)-rust$"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+ruru = "0.9"
+lazy_static = "0.2"
+ndarray = {git = "https://github.com/nathanfaucett/rs-ndarray.git"}
